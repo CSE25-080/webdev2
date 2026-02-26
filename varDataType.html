@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Value Types in JS</title>
+</head>
+<body>
+    <script>
+        // JS Data Value Types
+        // Primitive - immutable single value Data type in JS
+        // String , number ,  boolean , undifined , null , BigInt and Symbol
+
+        // String
+        var my_Name =  "Sandesh Pandey";
+        console.log(my_Name);
+
+        // number
+        var my_Number = 8437874986;
+        console.log(my_Name + "mobile number is " + my_Number);
+
+        // boolean
+        var isMarried = false;
+        console.log(my_Name + " is married " + isMarried);
+
+        // Undefined
+        var myEmail = "sandesh231@gnail.com";
+        console.log(myEmail);
+        console.log(typeof(myEmail));
+
+        // null
+        var myAddress = null;
+        console.log(myAddress);
+        console.log(typeof(myAddress));
+
+        // BigInt 
+        var myNum = BigInt(8478949854868968645);
+        console.log(myNum);
+        console.log(typeof(myNum));
+
+        // Symbol
+        var var1 = Symbol("sandesh");
+        var var2 = Symbol("sandesh");
+        console.log(var1 == var2);
+
+
+        // Refernce Type(object)--mutable in memory and keep the data in key value pair
+
+        // Object {}, function() , array[]
+
+        let myInfo={
+            name:"ajay", 
+            age:23, 
+            isMarried:false,
+            address:"ghaziabad",
+            branch:"CSE",
+            section:23
+
+        };
+        console.log(myInfo);
+        console.log(myInfo.name);
+
+        // Object length
+        var keys=Object.keys(myInfo);
+        console.log(keys.length);
+
+        // function - block of code to perform particular task
+
+        function cal(){
+            var num1 = 45;
+            var num2 = 50;
+            var add= num1+num2;
+            console.log("addition of twp numbers is " + add);
+        }
+        cal();
+
+        // array - collection of any data type
+
+        let studentList= ["ram", "kaam", "don", "carav"];
+        console.log(studentList[0]);
+        // for differnt data type 
+        let ram=["Ram", 23, false , "gzb", "CSE", null, 18 ];
+        console.log(ram);
+        console.log(ram.length);
+
+        // to itterate array member 
+        for(let i = 0; i<= ram.length; i++) {
+            console.log(ram[i]);
+        }
+        for(let x in ram){
+            console.log("updated", ram);
+        }
+
+    </script>
+</body>
+</html>
