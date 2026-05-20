@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        // promises 
+
+
+        let myPromise=new Promise(function(resolve , reject){
+            let age = 25;
+            if(age>18){
+                resolve("valid age ");
+            }
+            else{
+                reject("wait for next year");
+            }
+
+        });
+        myPromise
+        .then(msg=>console.log(msg))
+        .catch(error=>console.log(error));
+        
+    </script>
+</body>
+</html>
